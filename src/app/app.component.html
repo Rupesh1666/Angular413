@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Angular App</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      height: 100vh;
+      text-align: center;
+    }
+    .title {
+      grid-column: 1 / -1;
+    }
+    .movie {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    .photo-video {
+      grid-row: 2;
+      grid-column: 2;
+    }
+    .chores-list {
+      grid-row: 2;
+      grid-column: 3;
+    }
+    .links {
+      grid-row: 3;
+      grid-column: 1 / -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Angular Lesson 1 Exercises</h1>
+      <hr>
+    </div>
+    <div class="movie">
+      <app-movie-list></app-movie-list>
+    </div>
+    <div class="photo-video">
+      <app-photo-video></app-photo-video>
+    </div>
+    <div class="chores-list">
+      <app-chores-list></app-chores-list>
+    </div>
+    <div class="links">
+      <app-links></app-links>
+    </div>
+  </div>
+</body>
+</html>
